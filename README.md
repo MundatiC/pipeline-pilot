@@ -76,4 +76,4 @@ The pipeline:
 
 ## License 📄
 
-MIT License - see [LICENSE](LICENSE) file for details
+GPL License - see [LICENSE](LICENSE) file for details
