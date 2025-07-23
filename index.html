@@ -3,37 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fredoka+One&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="index.css" />
-    <title>Static Page Deployment Example</title>
+    <title>Awesome Static Page</title>
 </head>
-<body>
-    <div class="container">
-        <div class="one">
-            <h1>Static Page Deployment Example</h1>
-            <p class="one-p">This is a simple static page to demonstrate deployment.</p>
-        </div>
-        <a href="#two"><img src="arrow-down.svg" /></a>
-        <div class="two" id="two">
-                <div class="cards">
-                    <p>
-                        This page is made out of HTML and CSS.
-                    </p>
-                </div>
-                <div class="cards">
-                    <p>
-                        These cards are animated.
-                    </p>
-                </div>
-                <div class="cards">
-                    <p>
-                        It is also responsive!
-                    </p>
-                </div>
-        </div>
-        <footer style="color: black; font-weight: bold;">
-            &copy; 2025 Chidiadi Anyanwu
-        </footer>
-    
+<body class="light-theme">
+    <div class="theme-toggle">
+        <button id="theme-switcher">🌙</button>
     </div>
+    
+    <div class="stars"></div>
+    
+    <div class="container">
+        <header class="animate__animated animate__fadeInDown">
+            <h1>Welcome to <span class="gradient-text theme-title"></span></h1>
+            <p class="subtitle">Where static pages come to life!</p>
+        </header>
+
+        <a href="#features" class="bouncing-arrow">
+            <img src="https://cdn-icons-png.flaticon.com/512/892/892692.png" alt="Down arrow" />
+        </a>
+
+        <section class="features" id="features">
+            <div class="feature-card card-1">
+                <div class="card-icon">✨</div>
+                <h3>Interactive Magic</h3>
+                <p>Watch elements dance and respond to your cursor!</p>
+            </div>
+            
+            <div class="feature-card card-2">
+                <div class="card-icon">🎨</div>
+                <h3>Vibrant Colors</h3>
+                <p>Gradients that shift like the northern lights</p>
+            </div>
+            
+            <div class="feature-card card-3">
+                <div class="card-icon">📱</div>
+                <h3>Fluid Design</h3>
+                <p>Looks amazing on any device</p>
+            </div>
+        </section>
+
+        <div class="floating-island">
+            <button class="cta-button pulse">Click for Confetti!</button>
+        </div>
+
+        <footer>
+            <p>Made with ❤️ by <span class="author gradient-text">Caleb Mundati</span></p>
+            <div class="social-links">
+                <a href="https://twitter.com/CalebMundati" target="_blank" class="social-icon">🐦</a>
+                <a href="https://linkedin.com/in/caleb-mundati" target="_blank" class="social-icon">💻</a>
+                <a href="https://github.com/MundatiC" target="_blank" class="social-icon">🔗</a>
+            </div>
+            <p class="copyright">&copy; 2025 Cosmic Creations</p>
+        </footer>
+    </div>
+
+    <canvas id="confetti-canvas"></canvas>
+    <script src="index.js"></script>
 </body>
 </html>
